@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Assignment</title>
+  
+</head>
+<body>
+  <h1>Hello </h1>
+  <script>
+
+  //declared variables
+    let firstName = "Rapha";
+    let age1 = 20;
+    let color1 = "black";
+    console.log("My name is " + firstName + " and i am " + age1 + "yrs old. My favorite color is "+ color1 +"." );
+
+	//Reassign Values and Print
+    firstName = "Leon";
+    age1 = "21";
+    color1 = "Blue";
+    console.log("My name is " + firstName + " and i am " + age1 + "yrs old. My favorite color is "+ color1 +"." );
+
+    //Object Example 1
+   let account1 = {
+     github: "raphachegeke",
+     x: "Rapha Chege",
+     linkedin: "Rapha Kamunu",
+   };
+  console.log("Object1:", account1.github);
+
+
+//object example 2
+  let user1 = {
+    director: "Leon Kamau",
+    manager: "Gladys Wambui",
+    secretary: "Daniel Chege",
+    member: "Grace Wanjiru",
+  }
+  console.log("Object2:", user1.director);
+
+
+//Object Example 3
+  const credentials1 = {
+    name: "Rapha Chege Kamunu",
+    id: "41831655",
+    phone: "+254788383053",
+  }
+  console.log("Object3:", credentials1.name);
+
+  
+//Array Examples
+  let students1 = ["Rapha","Daniel","Gladys"];
+  console.log("Array1:", students1[0]);
+  let phone1 = [254748397839,254788383053, 254114745402];
+  console.log("Array2:",phone1[1]);
+  let course1 = ["Development","Design","Marketing"];
+  console.log("Array3:", course1[2]);
+
+
+  //Arithmetic Operators
+  let a1 = 40;
+  let b1 = 10;
+  console.log("Add 40+10:", a1+b1);
+  console.log("Subtract 40-10", a1-b1);
+  console.log("Multiply 40*10", a1*b1);
+  console.log("Divide 40/10", a1/b1);
+
+  	//function "introduce"
+  function introduce (name, age){
+    console.log("My name is", name, ". I am", age+"yrs old");
+  }
+  introduce("Rapha", 21)
+   
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="alert('Hello')">click me</button>
+    <script>
+        //Object Example 1
+        let account = {
+            github: "raphachegeke",
+            x: "Rapha Chege",
+            linkedin: "Rapha Kamunu",
+        };
+        console.log("Object1:", account.github);
+
+
+        //object example 2
+        let user = {
+            director: "Leon Kamau",
+            manager: "Gladys Wambui",
+            secretary: "Daniel Chege",
+            member: "Grace Wanjiru",
+        }
+        console.log("Object2:", user.director);
+
+
+        //Object Example 3
+        const credentials = {
+            name: "Rapha Chege Kamunu",
+            id: 41831655,
+            phone: "+254788383053",
+        }
+        console.log("Object3:", credentials.name);
+
+        // array inside an object 
+        let students = {
+            names: ["Rapha", "Daniel", "Gladys"],
+            phones: [748397839, 254788383053, 254114745402],
+            courses: ["Development", "Design", "Marketing"]
+        };
+        console.log("List of students", students.names[0]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Event Handling Practice</h1>
+    <p id="para">My name is Rapha</p>
+
+    <!-- buttons for changing text and background color -->
+    <button id="m" onclick="changeTitle()">Change Heading</button>
+    <button id="m textBtn">Change paragraph text</button>
+    <button id="m colorBtn">Change background color</button>
+
+    <script>
+
+        // i used variables to hold button and paragraph elements
+        let pbtn = document.getElementById("textBtn");
+        let pText = document.getElementById("para");
+
+        pbtn.onclick = function () {
+            pText.innerText = "I am learning Javascript event handling";
+        };
+
+        // used variable to hold button element
+        let colorChange = document.getElementById("colorBtn");
+        colorChange.onclick = function () {
+            document.body.style.backgroundColor = "yellow";
+        };
+
+        function changeTitle() {
+            let heading = document.getElementById("title");
+            heading.textContent = "I am learning Javascript Event Handling";
+            heading.style.color = "blue";
+            heading.style.textAlign = "center";
+        }
+
+    </script>
+</body>
+
+</html>
