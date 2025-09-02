@@ -10,14 +10,15 @@
 <body>
     <h1 id="title">Event Handling Practice</h1>
     <p id="para">My name is Rapha</p>
-    <p id="loremText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae eius officiis, consequuntur libero voluptatem,
+    <p id="loremText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae eius officiis, consequuntur
+        libero voluptatem,
         placeat atque voluptates aspernatur repellat nobis quam odit numquam earum ad magni voluptate? In, sunt?</p>
 
     <!-- buttons for changing text and background color -->
     <button onclick="changeTitle()">Change Heading</button>
     <button id="textBtn">Change paragraph text</button>
     <button id="colorBtn">Change background color</button>
-    <button id="btn-event">CLick me</button>
+    <button id="btn-event">Cick me</button>
 
     <script>
 
@@ -43,7 +44,16 @@
         }
 
         // add event listener to the button with id btn-event
-        
+        let btn = document.getElementById("btn-event");
+
+        // action upon clicking the button 
+        btn.addEventListener(
+            "click", function () {
+                // we want to chenge the text of the paragraph with id loremText
+                document.getElementById("loremText").textContent = "The text has changed after clicking the button";
+            }
+
+        );
     </script>
 </body>
 
