@@ -10,11 +10,14 @@
 <body>
     <h1 id="title">Event Handling Practice</h1>
     <p id="para">My name is Rapha</p>
+    <p id="loremText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae eius officiis, consequuntur libero voluptatem,
+        placeat atque voluptates aspernatur repellat nobis quam odit numquam earum ad magni voluptate? In, sunt?</p>
 
     <!-- buttons for changing text and background color -->
-    <button id="m" onclick="changeTitle()">Change Heading</button>
-    <button id="m textBtn">Change paragraph text</button>
-    <button id="m colorBtn">Change background color</button>
+    <button onclick="changeTitle()">Change Heading</button>
+    <button id="textBtn">Change paragraph text</button>
+    <button id="colorBtn">Change background color</button>
+    <button id="btn-event">CLick me</button>
 
     <script>
 
@@ -39,6 +42,8 @@
             heading.style.textAlign = "center";
         }
 
+        // add event listener to the button with id btn-event
+        
     </script>
 </body>
 
