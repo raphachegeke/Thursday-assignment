@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p id="demo"> Hello Rapha</p>
-    <p class="about"></p>
     <p id="demo2">My name is Rapha</p>
 
+    <!-- used an id and onclick to change the text of a paragraph when clicked on it: -->
+    <p id="demo1" onclick="changeText()">Click to change text</p>
+
     <script>
+        // used a function to change the text of a paragraph when clicked on it:
+        function changeText() {
+
+            // Find the element with id "demo1" and change its inner HTML
+            document.getElementById("demo1").innerHTML = '<span style="color:red;">Now the <b>text</b> is <u>changed</u>!</span>';
+        }
+
         let content = document.getElementById("demo").innerHTML;
         console.log(content);
 
-        let content1 = document.getElementById("demo2");
-        alert(content1.innerHTML);
+        let content2 = document.getElementById("demo2").innerHTML;
+        alert(content2);
 
+        let content1 = document.getElementById("demo").innerHTML;
+        content1.style.color = "red"
 
     </script>
 </body>
+
 </html>
